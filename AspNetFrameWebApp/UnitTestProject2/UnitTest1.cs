@@ -1,0 +1,24 @@
+﻿using System;
+using AspNetFrameWebApp.Models;
+using NUnit.Framework;
+
+
+namespace UnitTestProject2
+{
+    public class Tests
+    {
+        [SetUp]
+        public void Setup()
+        {
+        }
+
+
+        [Test]
+        public void Test1()
+        {
+            Calculator calculator = new Calculator();
+            var result = calculator.Sum(5, 6, 7);
+            Assert.AreEqual(18, result);
+        }
+    }
+}
